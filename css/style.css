@@ -31,3 +31,12 @@ body {
     color: darkblue;
     font-size: 30px;
 }
+.intro a {
+    color: white;
+}
+.address nav a, .experience nav a, .competencies nav a, .academic nav a {
+    color: skyblue;
+}
+.intro a:hover, nav a:hover {
+    color: darkblue;
+}
