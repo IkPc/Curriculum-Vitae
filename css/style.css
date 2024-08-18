@@ -1,3 +1,6 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Audiowide:regular');
+/*general*/
 * {
     scroll-behavior: smooth;
 }
@@ -9,12 +12,7 @@ body {
     .text-center {
         text-align: center;
     }
-    h2 {
-        color: darkblue;
-        background-color: lightskyblue;
-        font-size: 24px;
-    }
-    h1, h2, a, a:visited {
+    h1, h2, a, a:visited, .resume a {
         color: darkblue;
     }
     a {
@@ -23,20 +21,68 @@ body {
     a:hover {
         text-decoration: underline;
     }
-    img {
-        border-radius: 50px;
+    #launch {
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 
-.intro h1 {
+/*intro*/
+h1 {
     color: darkblue;
     font-size: 30px;
+    font-family: 'Audiowide', sans-serif;
+    }
+img {
+    border-radius: 50px;
 }
 .intro a {
-    color: white;
-}
-.address nav a, .experience nav a, .competencies nav a, .academic nav a {
-    color: skyblue;
-}
-.intro a:hover, nav a:hover {
     color: darkblue;
+}
+
+/*below intro*/
+h2 {
+    color: darkblue;
+    background-color: lightskyblue;
+    font-size: 24px;
+    border-radius: 5px;
+}
+.address p, .experience p, .academic p{
+    line-height: 50%;
+}
+
+/*social*/
+#social {
+    font-size: 2rem;
+}
+    #facebook, #linkedin {
+        color: navy;
+    }
+    #twitter {
+        color: dodgerblue;
+    }
+
+
+/*page-resume*/
+#gitlink:hover {
+    color: white;
+    background-color: darkblue;
+    padding: 3px;
+    text-decoration: none;
+}
+
+/*print*/
+@media print {
+    body, h1 {
+        color: black;
+        font-family: Times, serif;
+    }
+    #person {
+        text-align: left;
+    }
+    h2 {
+        background-color: unset;
+    }
+    .intro a, .address nav a, .experience nav a, .competencies nav a, .academic nav a {
+        display: none;
+    }
 }
